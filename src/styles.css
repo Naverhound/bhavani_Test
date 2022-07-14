@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --nude: #CEC5B4;
+    --nude_secondary: #CBAD9D;
+    --main_orange: #EEAA7F;
+    --second_orange: #E07C53;
+    --third_orange: #E07C53;
+    --mauve: #B86B6A;
+    --tierra: #B3837D;
+    --dust: #D8B1A4;
+    --highlight: #D6EFA4;
+    --baby_blue: #899FC4;
+
+    --reg_text_font: 'Nunito Sans' ;/* Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper sus */
+    --reg_text_size: 18px;
+    --reg_text_weight: 400;
+
+    --header_1_font:'Saol Standard';
+    --header_1_size:  64px;
+    --header_1_weight: 500;
+
+    --header_2_font: 'Ondo';
+    --header_2_size: 40px;
+    --header_2_weight: 800;
+
+    --header_3_font: 'DM Mono';
+    --header_3_size: 24px;
+    --header_3_weight: 500;
+
+    --header_4_font: 'Ondo';
+    --header_4_size: 64px;
+    --header_4_weight: 800;
+
+    --button_weight: 700;
+    --button_text_size: 18px;
+
+
+
+}
