@@ -1,27 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=DM+Mono:wght@500&family=Nunito+Sans&family=Old+Standard+TT:wght@700&display=swap');
 :root{
+    --baby_blue: #899FC4;
     --black: #000000;
-    --white: #FFFFFF;
-    --nude: #CEC5B4;
-    --nude_secondary: #CBAD9D;
-    --main_orange: #EEAA7F;
-    --second_orange: #E07C53;
-    --third_orange: #E07C53;
-    --mauve: #B86B6A;
-    --tierra: #B3837D;
     --dust: #D8B1A4;
     --highlight: #D6EFA4;
-    --baby_blue: #899FC4;
+    --main_orange: #EEAA7F;
+    --mauve: #B86B6A;
+    --non_white: #FDFCF5;
+    --nude: #CEC5B4;
+    --nude_secondary: #CBAD9D;
+    --second_orange: #E07C53;
+    --third_orange: #E07C53;
+    --tierra: #B3837D;
+    --white: #FFFFFF;
+    
+    
 
-    --reg_text_font: 'Nunito Sans' ;/* Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper sus */
+    --reg_text_font: 'Nunito Sans';
     --reg_text_size: 18px;
     --reg_text_weight: 400;
 
-    --header_1_font:'Saol Standard';
+    --header_1_font:'Old Standard TT';
     --header_1_size:  64px;
     --header_1_weight: 500;
 
-    --header_2_font: 'Ondo';
+    --header_2_font: 'Cabin';
     --header_2_size: 40px;
     --header_2_weight: 800;
 
@@ -29,7 +33,7 @@
     --header_3_size: 24px;
     --header_3_weight: 500;
 
-    --header_4_font: 'Ondo';
+    --header_4_font: 'Cabin';
     --header_4_size: 64px;
     --header_4_weight: 800;
 
@@ -38,4 +42,32 @@
 
 
 
+}
+
+p{
+    font-family: var(--reg_text_font);
+    font-size: var(--reg_text_size);
+    font-weight: var(--reg_text_weight);
+}
+.button{
+    font-family: var(--reg_text_font);
+    font-weight: var(--button_weight);
+    font-size: var(--button_text_size);
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border-color: transparent;
+}
+.banner_title{
+    font-family: var(--header_2_font);
+    font-size: var(--header_2_size);
+    font-weight: var(--header_2_weight);
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.subtitle{
+    font-family: var(--header_3_font);
+    font-size: var(--header_3_size);
+    font-weight: var(--header_3_weight);
+    color: var(--black);
 }

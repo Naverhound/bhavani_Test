@@ -1,0 +1,151 @@
+
+p{
+    margin:0;
+}
+
+.arrow{
+color: black;
+padding-right: 10px;
+}
+
+#benefits , #protocols{
+    background-color: var(--non_white);
+    padding: 3vw 5vw 3vw;
+}
+#benefits button, #protocols button{
+    background-color: var(--main_orange);
+}
+.bottom_border_container{
+    border-bottom: 1px solid #000;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+.description_text{
+    margin-left: auto;
+}
+.flex_container{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_container .banner_title{
+    width: 20vw;
+}
+.flex_container .description_text{
+    display: flex;
+    width: 22rem;
+    
+}
+#general_info{
+    margin-top:0;
+    background-color:var(--main_orange);
+    text-transform: uppercase;
+}
+
+.general_info_container{
+    padding: 2vw 30vw;
+    text-align: center;
+}
+
+.general_info_container .text{
+    margin-top: 2rem;
+    letter-spacing: 0.115em;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content:space-evenly;
+}
+.grid_container .card{
+    margin-bottom: 12rem;
+    background-color:transparent;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100px;
+    width: 15rem;
+}
+.grid_container .card p{
+    margin-top: 2rem;
+}
+
+.header_container{
+    color: white;
+    padding-top: 18vw;
+    margin-left: 8vw;
+    max-width: 30vw;
+    min-height: 75vh;
+}
+
+.header_container h1{
+    font-family: var(--header_1_font);
+    font-weight: var(--header_1_weight);
+    font-size: var(--header_1_size);
+}
+
+.header_container button{
+    background-color: var(--highlight);
+    margin-top: 2rem;    
+}
+
+#landing_info{
+    min-width: 100vw;
+    background-image: url("../assets/imgs/landing_1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height:100%;
+    padding-bottom:15rem;
+}
+
+
+
+@media (max-width:926px){
+    .arrow{
+        display: none;
+    }
+    #benefits{
+        padding: 3rem .5rem 3rem;
+    }
+    #benefits h2{
+        text-align: center;
+    }
+    .description_text{
+        margin:0;
+    }
+    .flex_container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    .flex_container .banner_title{
+        width:auto;
+    }
+    .general_info_container{
+        padding: 10vw 5vw 15vw;
+        text-align:center;
+    }
+    .general_info_container p{
+        font-family: var(--reg_text_font);
+        font-weight: var(--reg_text_weight);
+        font-size: var(--reg_text_size);
+        text-transform: none;
+    }
+    .grid_container{
+        display: flex;
+        overflow-x:scroll;
+    }
+    #landing_info{
+        text-align: left;
+    } 
+    .header_container{
+        padding: 15rem .5rem 3rem;
+        max-width:100%;
+        line-height:2rem;
+    }
+    .header_container h1{
+        line-height:3.5rem;
+    }
+}

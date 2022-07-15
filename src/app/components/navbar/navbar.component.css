@@ -1,0 +1,30 @@
+
+.navbar{
+    background-color: var(--non_white);
+    font-family: var(--reg_text_font);
+    font-size: var(--reg_text_size);
+    font-weight: var(--reg_text_weight);
+    text-transform: uppercase;
+    text-underline-offset: 10px;
+
+}
+.navbar ul li a{
+    color: black;
+}
+.navbar ul li{
+    padding-right: 40px;
+    color: var(--black)
+}
+.navbar ul li a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+.navbar-light .navbar-toggler {
+    border-color: transparent !important;
+}
+
+@media (min-width:375px){
+    .navbar{
+        padding: 20px 10px;
+    }
+}
