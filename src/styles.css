@@ -21,7 +21,7 @@
     --reg_text_size: 18px;
     --reg_text_weight: 400;
 
-    --header_1_font:'Old Standard TT';
+    --header_1_font:'Old Standard TT';/*Saol Replacement*/
     --header_1_size:  64px;
     --header_1_weight: 500;
 
@@ -43,11 +43,18 @@
 
 
 }
-
+body{
+    overflow-x: hidden!important;
+}
 p{
     font-family: var(--reg_text_font);
     font-size: var(--reg_text_size);
     font-weight: var(--reg_text_weight);
+}
+h1{
+    font-family: var(--header_1_font);
+    font-size: var(--header_1_size);
+    font-weight: var(--header_1_weight);
 }
 .button{
     font-family: var(--reg_text_font);

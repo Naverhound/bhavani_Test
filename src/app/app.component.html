@@ -1,5 +1,5 @@
 <component-navbar></component-navbar>
-<header id="landing_info" class="">
+<header id="landing_info" class="image_background">
   <div class="header_container">
     <h1>Una <span style="font-style: italic;">revolución</span> de la salud.</h1>
     <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -36,28 +36,28 @@
       </div>
     </div>
   </div>
-  <div class="grid_container">
-    <div class="card">
+  <div class="svgs_container">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/stress.svg" alt="" srcset="">
       <p class="subtitle">Manejo de estrés</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/depression.svg" alt="" srcset="">
       <p class="subtitle">Antidepresivo y ansiolítico</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/creativity.svg" alt="" srcset="">
       <p class="subtitle">Aumenta la creatividad</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/ego.svg" alt="" srcset="">
       <p class="subtitle">Desolidifica el ego</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/empathy.svg" alt="" srcset="">
       <p class="subtitle">Desarrolla la empatía</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/brain.svg" alt="" srcset="">
       <p class="subtitle">Aumenta la plasticidad cerebral</p>
     </div>
@@ -73,7 +73,26 @@
   <div>testimonios carrousel</div>
 </section>
 <section id="formula">
-  <div>formulas aqui n.n</div>
+  <div class="formula_container">
+    <div class="formula_container_item">
+      <img class="img-fluid" src="/assets/imgs/mushroom.jpg" alt="" srcset="">
+    </div>
+    <div class="formula_container_item">
+      <h1>Nuestras <span style="font-style: italic;">Fórmulas</span>.</h1>
+      <p>Nuestras fórmulas se desarrollan a partir de nuestro banco genético, que cuenta con una variedad de 71 especies diferentes de hongos del género Psilocybe.
+        <br>
+        <br>
+        El hongo es una inteligencia que se adapta a tu sistema y sanará lo que tu sistema nervioso y tu cuerpo psico-emocional necesiten sanar. Cada persona establece una relación personal con el hongo y tiene una respuesta y sensibilidad distinta.
+        <br>
+        <br>
+        Es muy probable que durante un tratamiento de 90 días desees probar diferentes fórmulas que se complementen entre sí y ofrezcan diferentes matices a tu proceso.
+        <br>
+        <br>
+        Las descripciones de las fórmulas no deben limitar la experiencia generando expectativas específicas, sino que intentan mostrar cómo los distintos tipos de hongos tienen diferentes tendencias, diferentes formas de sanar, y cómo enfatizan algunos aspectos de nuestra experiencia en el proceso.
+        
+        </p>
+    </div>
+  </div>
 </section>
 <section id="protocols">
   <div class="bottom_border_container">
@@ -88,28 +107,28 @@
       </div>
     </div>
   </div>
-  <div class="grid_container">
-    <div class="card">
+  <div class="svgs_container">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/parkinson.svg" alt="" srcset="">
       <p class="subtitle">Parkinson</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/focus.svg" alt="" srcset="">
       <p class="subtitle">ADD, ADHD, ATENCION Y CONCENTRACION</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/self_knowledge.svg" alt="" srcset="">
       <p class="subtitle">Autoconocimiento y crecimiento personal</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/letucce.svg" alt="" srcset="">
       <p class="subtitle">Reconexión con el gozo de vivir</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/addiction.svg" alt="" srcset="">
       <p class="subtitle">Adicciones</p>
     </div>
-    <div class="card">
+    <div class="svgs_card">
       <img src="/assets/imgs/svgs/anxiolytics.svg" alt="" srcset="">
       <p class="subtitle">Depresión y ansiedad con antidepresivos</p>
     </div>
@@ -118,4 +137,29 @@
     <button class="button">Quiero saber más</button>
   </div>
 </section>
+<section id="end_content" class="image_background">
+  <div class="end_content_container">
+    <p>Comienza tu <span style="font-style:italic;">tratamiento.</span></p>
+    <button class="button">Iniciar mi protocolo</button>
+  </div>
+</section>
+<footer>
+  <div class="footer_container">
+    <div class="logo_container">
+      <img src="/assets/imgs/Bhavani_blanco.png" alt="" srcset="">
+    </div>
+    <div *ngFor="let element of footer_links" class="link_list">
+      <strong>{{element.top_link_name}}</strong>
+      <ul>
+        <li *ngFor="let sub_element of element.sub_links">
+          <a href="">{{sub_element.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_logo">
+    <img src="/assets/imgs/svgs/footer_logo.svg" alt="">
+    <p>Copyright © Bhavani. Todos los derechos reservados.</p>
+  </div>
+</footer>
 <router-outlet></router-outlet>

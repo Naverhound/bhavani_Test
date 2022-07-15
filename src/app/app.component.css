@@ -2,7 +2,21 @@
 p{
     margin:0;
 }
-
+a{
+    font-family: var(--reg_text_font);
+    font-size: var(--reg_text_size);
+    font-weight: var(--reg_text_weight);
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    text-decoration: none!important;
+}
+footer{
+    background-color: #E79066;;
+}
 .arrow{
 color: black;
 padding-right: 10px;
@@ -23,6 +37,24 @@ padding-right: 10px;
 .description_text{
     margin-left: auto;
 }
+#end_content{
+    background-image: url("../assets/imgs/footer_1.jpg"); 
+}
+.end_content_container{
+    color: var(--non_white);
+    text-align: center;
+    padding: 10vw;
+}
+.end_content_container p{
+    margin-top: 6rem;
+    font-family: var(--header_1_font);
+    font-size: var(--header_1_size);
+    font-weight: var(--header_1_weight);
+}
+.end_content_container button{
+    background-color: var(--highlight);
+    margin-top: 5rem;    
+}
 .flex_container{
     display: flex;
     justify-content: space-between;
@@ -34,6 +66,39 @@ padding-right: 10px;
     display: flex;
     width: 22rem;
     
+}
+.footer_container{
+    display:grid;
+    grid-template-columns: 40vw 20vw 20vw 20vw;
+    color: var(--non_white);
+    padding: 6rem 3rem 2rem;
+}
+.footer_container a{
+    text-decoration: none!important;
+    color: var(--non_white);
+}
+.footer_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer_logo p{
+    padding: 2rem 0rem 2rem;
+    color: var(--non_white);
+    font-family: var(--reg_text_font);
+    font-size: var(--reg_text_size);
+    font-weight: var(--reg_text_weight);
+}
+.formula_container{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    background-color: var(--nude);
+    color: var(--black)
+}
+.formula_container .formula_container_item{
+    padding: 10rem;
+    text-align: start;
 }
 #general_info{
     margin-top:0;
@@ -50,21 +115,36 @@ padding-right: 10px;
     margin-top: 2rem;
     letter-spacing: 0.115em;
 }
-.grid_container{
+.image_background{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height:100%;
+    min-width: 100vw;
+}
+.link_list ul{
+    padding: 0;
+    text-align:start;
+}
+.link_list ul li{
+    padding-top: 1rem;
+}
+.svgs_container{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content:space-evenly;
 }
-.grid_container .card{
+.svgs_container .svgs_card{
     margin-bottom: 12rem;
     background-color:transparent;
     border: none;
     text-transform: uppercase;
     text-align: center;
-    height: 100px;
+    height: 100px;          
     width: 15rem;
 }
-.grid_container .card p{
+.svgs_container .svgs_card p{
     margin-top: 2rem;
 }
 
@@ -88,13 +168,7 @@ padding-right: 10px;
 }
 
 #landing_info{
-    min-width: 100vw;
     background-image: url("../assets/imgs/landing_1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    height:100%;
     padding-bottom:15rem;
 }
 
@@ -113,15 +187,37 @@ padding-right: 10px;
     .description_text{
         margin:0;
     }
+    #end_content{
+       background-image: url("/assets/imgs/footer_1_mobile.jpg");
+       background-position: center center;
+    }
     .flex_container{
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
         padding: 0;
     }
     .flex_container .banner_title{
         width:auto;
+    }
+    .footer_container{
+        display: block;
+        text-align: center;
+    }
+    .footer_container .logo_container{
+        display: none;
+    }
+    .footer_logo{
+        text-align: center;
+    }
+    .formula_container{
+        display: block;
+    }
+    .formula_container .formula_container_item{
+        padding: 0;
+        text-align: start;
     }
     .general_info_container{
         padding: 10vw 5vw 15vw;
@@ -133,9 +229,24 @@ padding-right: 10px;
         font-size: var(--reg_text_size);
         text-transform: none;
     }
-    .grid_container{
+    .svgs_container{
+        padding: 2rem 0rem ;
         display: flex;
-        overflow-x:scroll;
+        flex-wrap: nowrap;
+        overflow-x:auto;
+        justify-content: space-between;
+    }
+    .svgs_container .svgs_card{
+        background: #F1F0E8;
+        border-radius: 15px;
+        margin-left: 1rem;
+        padding: 50px 5px 0px;
+        min-width: 300px;
+        height: auto;
+        margin-bottom: 0;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
     }
     #landing_info{
         text-align: left;
